@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Alura Barb</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1><img src="imgs/logo.png" alt="logo de la empresa"/></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <form>
+        <label for="nombreapellido">Nombre y Apellidos</label>
+        <input type="text" id="nombreapellido" class="input-padron" placeholder="Escriba su correo" required>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" class="input-padron"/>
+
+        <label for="tlf">Teléfono</label>
+        <input type="tel" id="tlf" class="input-padron"/>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+
+        <fieldset>
+          <legend>¿Cómo te gustaria que nos contactemos contigo?</legend>
+          <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email" />Email</label>
+          <label for="radio-tlf"><input type="radio" name="contacto" value="tlf" id="radio-tlf" />Telefono</label>
+          <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"checked/>Whatsapp</label>
+        </fieldset>
+
+        <fieldset>
+        <legend>¿En que horario prefiere ser atendido?</legend>
+        <select>
+          <option>Mañana</option>
+          <option>Tarde</option>
+          <option>Noche</option>
+        </select>
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox" checked>Le gustaría recibir novedades de la barbería?</label>
+        <input type="submit" class="enviar" value="Enviar Formulario">
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Días</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td>08h - 20h</td>
+        </tr>
+        <tr>
+          <td>Miercoles</td>
+          <td>08h - 20h</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>08h - 20h</td>
+        </tr>
+      </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <img src="imgs/logo-blanco.png" alt="logo de footer" />
+      <p class="copy">&copy Copyright AbelDM 2023</p>
+    </footer>
+  </body>
+</html>
